@@ -11,7 +11,10 @@ opt.expandtab = true
 opt.autoindent = true
 
 -- line wrapping
-opt.wrap = false
+opt.wrap = true
+
+-- not split word
+opt.breakindent = true
 
 -- search settings
 opt.ignorecase = true
@@ -23,7 +26,6 @@ opt.cursorline = true
 -- appearance
 opt.termguicolors = true
 opt.background = "dark"
-
 
 -- backspace
 opt.backspace = "indent,eol,start"
