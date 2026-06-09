@@ -1,0 +1,33 @@
+# Starship prompt config — https://starship.rs/config/
+# Minimal, emoji-free. Only the segments listed in `format` are ever shown,
+# so language/cloud auto-detect modules (go 🐹, python 🐍, gcloud ☁️, aws, k8s…)
+# never appear. To add one back, insert e.g. $golang into `format` below.
+
+format = "$directory$git_branch$git_status$line_break$character"
+right_format = "$cmd_duration"   # show command duration on the far right
+
+add_newline = true   # blank line before each prompt
+
+# Prompt character: ❯ green on success, red on error
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+# Current directory — full path (cyan)
+[directory]
+truncation_length = 0      # 0 = no truncation, show the whole path
+truncate_to_repo = false   # don't collapse to just the repo name
+style = "bold cyan"
+
+# Git branch — "repo → branch", arrow connector dimmed, branch in purple
+[git_branch]
+symbol = ""
+format = "[→](dimmed white) [$branch](bold purple) "
+
+[git_status]
+style = "bold yellow"
+
+# Last command duration (only if > 2s)
+[cmd_duration]
+min_time = 2000
+format = "took [$duration](bold yellow) "

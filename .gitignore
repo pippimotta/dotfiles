@@ -1,0 +1,10 @@
+# Machine-specific / secret config — never tracked
+*.local.zsh
+config/git/config.local
+
+# zsh runtime data (in case it ever lands inside a tracked dir)
+.zsh_history
+.zsh_sessions/
+
+# macOS junk
+.DS_Store

@@ -1,0 +1,27 @@
+# ~/.config/git/config  (tracked, machine-agnostic)
+# Machine-specific identity & signing live in ~/.config/git/config.local
+# (gitignored, created per machine by install.sh).
+
+[include]
+	path = ~/.config/git/config.local
+
+[init]
+	defaultBranch = master
+
+[pull]
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+
+[core]
+	editor = nvim
+
+[color]
+	ui = auto
+
+[branch]
+	sort = -committerdate
+
+[diff]
+	colorMoved = default
