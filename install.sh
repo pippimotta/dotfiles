@@ -22,6 +22,7 @@ elif [[ -x /usr/local/bin/brew ]]; then eval "$(/usr/local/bin/brew shellenv)"; 
 
 info "Installing CLI tools"
 brew install \
+  git gh \
   starship fzf ripgrep zoxide bat neovim \
   zsh-autosuggestions zsh-syntax-highlighting \
   kubectl kubectx
