@@ -28,7 +28,7 @@ brew install \
   kubectl kubectx
 
 info "Installing GUI apps (casks)"
-brew install --cask ghostty
+brew install --cask ghostty google-chrome
 
 # --- 2. symlinks ------------------------------------------------------------
 link() {  # link <repo-relative-source> <absolute-dest>
