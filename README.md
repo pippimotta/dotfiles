@@ -41,15 +41,17 @@ config/zsh/conf.d/           drop-in modules, number-prefixed for load order
   80-autosuggestions 90-prompt 99-syntax-highlighting
 config/starship.toml         minimal, emoji-free prompt
 config/git/config            git settings; identity is layered in via include
+config/ghostty/config        Ghostty terminal settings
 ```
 
 Symlinked into `~/.zshenv`, `~/.config/zsh/.zshrc`, `~/.config/zsh/conf.d`,
-`~/.config/starship.toml`, `~/.config/git/config`.
+`~/.config/starship.toml`, `~/.config/git/config`, `~/.config/ghostty/config`.
 
 ## Tools
 
 git · gh · starship · fzf · ripgrep · zoxide · bat · neovim ·
-zsh-autosuggestions · zsh-syntax-highlighting · kubectl · kubectx
+zsh-autosuggestions · zsh-syntax-highlighting · kubectl · kubectx ·
+ghostty (cask)
 
 ## Machine-specific / secrets
 

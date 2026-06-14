@@ -27,6 +27,9 @@ brew install \
   zsh-autosuggestions zsh-syntax-highlighting \
   kubectl kubectx
 
+info "Installing GUI apps (casks)"
+brew install --cask ghostty
+
 # --- 2. symlinks ------------------------------------------------------------
 link() {  # link <repo-relative-source> <absolute-dest>
   local src="$REPO/$1" dest="$2"
@@ -46,6 +49,7 @@ link config/zsh/.zshrc       "$HOME/.config/zsh/.zshrc"
 link config/zsh/conf.d       "$HOME/.config/zsh/conf.d"
 link config/starship.toml    "$HOME/.config/starship.toml"
 link config/git/config       "$HOME/.config/git/config"
+link config/ghostty/config   "$HOME/.config/ghostty/config"
 
 # --- 3. machine-local git identity -----------------------------------------
 local_git="$HOME/.config/git/config.local"
