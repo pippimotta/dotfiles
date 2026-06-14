@@ -30,6 +30,12 @@ brew install \
 info "Installing GUI apps (casks)"
 brew install --cask ghostty google-chrome obsidian
 
+# Claude Code: official native installer (self-updating, not managed by Homebrew)
+if ! command -v claude >/dev/null 2>&1; then
+  info "Installing Claude Code"
+  curl -fsSL https://claude.ai/install.sh | bash
+fi
+
 # --- 2. symlinks ------------------------------------------------------------
 link() {  # link <repo-relative-source> <absolute-dest>
   local src="$REPO/$1" dest="$2"
