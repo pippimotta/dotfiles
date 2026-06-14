@@ -28,7 +28,7 @@ brew install \
   kubectl kubectx
 
 info "Installing GUI apps (casks)"
-brew install --cask ghostty google-chrome obsidian
+brew install --cask ghostty google-chrome obsidian visual-studio-code
 
 # Claude Code: official native installer (self-updating, not managed by Homebrew)
 if ! command -v claude >/dev/null 2>&1; then
