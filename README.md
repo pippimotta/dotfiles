@@ -17,12 +17,12 @@ A brand-new Mac has no `git` and no SSH key, so two manual steps come first:
    pbcopy < ~/.ssh/id_ed25519.pub          # then add it at github.com/settings/keys
    ```
    Or skip SSH and clone over HTTPS:
-   `git clone https://github.com/pippimotta/dotfiles-mac.git ~/dotfiles`
+   `git clone https://github.com/pippimotta/dotfiles.git ~/dotfiles`
 
 ## Install (fresh Mac)
 
 ```sh
-git clone git@github.com:pippimotta/dotfiles-mac.git ~/dotfiles
+git clone git@github.com:pippimotta/dotfiles.git ~/dotfiles
 ~/dotfiles/install.sh
 exec zsh
 ```
